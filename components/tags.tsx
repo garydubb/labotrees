@@ -3,9 +3,9 @@ export default function Tags({ tags }) {
     <div className="max-w-2xl mx-auto">
       <p className="mt-8 text-lg font-bold">
         Tagged
-        {tags.edges.map((tag, index) => (
+        {tags?.edges?.map((tag, index) => (
           <span key={index} className="ml-4 font-normal">
-            {tag.node.name}
+            {tag?.node?.name}
           </span>
         ))}
       </p>
